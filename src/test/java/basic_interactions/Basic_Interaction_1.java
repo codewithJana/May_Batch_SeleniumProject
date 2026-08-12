@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
 public class Basic_Interaction_1 {
-    static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) throws InterruptedException {
         //Initiate chromedriver.exe and open the browser
         WebDriver driver = new ChromeDriver();
         //Launch the URL
