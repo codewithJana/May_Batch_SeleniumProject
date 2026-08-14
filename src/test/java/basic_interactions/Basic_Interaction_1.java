@@ -6,6 +6,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
+import java.time.Duration;
+
 public class Basic_Interaction_1 {
     public static void main(String[] args) throws InterruptedException {
         //Initiate chromedriver.exe and open the browser
@@ -14,6 +16,7 @@ public class Basic_Interaction_1 {
         driver.get("https://testautomationpractice.blogspot.com/#");
         //Maximize the window
         driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
         //Get the page title
         System.out.println(driver.getTitle());
         //terminate chromedriver.exe and close browser
