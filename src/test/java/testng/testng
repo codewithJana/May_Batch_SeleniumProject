@@ -1,0 +1,25 @@
+TestNG -  Testing Next Generation
+    --> Testing framework inspired by JUnit
+
+Selenium Webdriver --> Interact with the browser
+
+Annotations --> pre-defined tags used in Java which control the test execution flow, manage test cycles. configure test steps. Elimimate  `main` method.
+
+Orders:
+
+@BeforeClass--->@BeforeSuite -->@BeforeTest-->@BeforeClass-->@BeforeMethod()--->@Test()--->@AfterMethod--->@AfterClass-->@AfterTest-->@AfterSuite
+
+Assertion :
+    --> Used to verify whether the actual result matches the expected results.
+    --> Assertion Types:
+        --> Hard Assertion
+        --> Soft Assertion
+
+FEATURE         |       HARD ASSERTION      |           SOFT ASSERTION
+
+class                   Assert                              SoftAssert
+Package                 org.testng.Assert                   org.testng.Asserts.SoftAssert
+Failure Behavior        Stops current test immediately      Test continues
+Multiple Validation     Stops at first failure              can execute remaining validations
+Assertall()             Not required                        required
+Best for                Critical validation                 Multiple independent validation
